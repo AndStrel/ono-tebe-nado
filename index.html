@@ -11,19 +11,19 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__menu">
-        <div class="header__links-list">
-          <div class="header__links-list-item_no-bullit">
-            <a class="header__link">Главная</a> <!-- первый пункт меню навигации без кружочка-->
-          </div>
-          <div class="header__links-list-item">
-            <a href="#" class="header__link_active">Посмотреть лоты</a> <!-- Пункты навигации с кружочками-->        
-          </div>
-          <div class="header__links-list-item">
+      <nav class="header__menu">
+        <ol class="header__links-list">
+          <li class="header__links-list-item_no-bullit">
+            <a href="#"class="header__link">Главная</a>
+          </li>
+          <li class="header__links-list-item">
+            <a href="#" class="header__link_active">посмотреть лоты</a>        
+          </li>
+          <li class="header__links-list-item">
             <a href="#" class="header__link_active">об аукционе</a>
-          </div>
-        </div>
-      </div>
+          </li>
+        </ol>
+      </nav>
       <div class="header__logo">
         <img 
         src="./images/logo-black.svg"
@@ -31,33 +31,27 @@
         class="header__logo-image"
         />
       </div>
-      <div class="address header__address">
+      <adress class="address header__address">
           <a href="tel:+99995555555">+9 999 555 5555
-          </a>
+          </a><br>
           <a href="mailto:info@sobaka.ge">info@sobaka.ge
           </a>
           <a>наб. Принсенграхт 263-<br>265, Амстердам</a>
-      </div>
-
+      </adress>
     </header>
 
     <main>
       <cover class="cover">
         <div class="cover__title">
-          <h1 class="title">
-          он<span>о</span><br>
-          теб<span>е</span><br>
-          <span>н</span>адо
-          </h1>
+          <h1 class="title__up">он<span class="title__upo">о</span><br></h1>
+          <h1 class="title__center">теб<span class="title__centere">е</span><br></h1>
+          <h1 class="title__down"><span class="title__downn">н</span>адо</h1>
+                    
         </div>
         <div class="cover__description">
-          <h1>аукцион вещей, в которые никто не верил</h1>
-          <div class="form__buttom">
-            <button class="bet-button">сделать ставку</button>
-          </div>
-          
-
+          <h2 class="cover__description__text">аукцион вещей, в которые никто не верил</h2>     
         </div>
+        <button class="bet-button">сделать ставку</button>
         <div></div>
         <div class="overlay">
 
