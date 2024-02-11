@@ -1,19 +1,18 @@
 .header {
-  position: relative;
   width: 1052px;
-  height: 105px;
-  left: 27px;
-  top: 92px;
+  padding-left: 27px;
+  padding-top: 92px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__menu {
   font-family: Raleway, sans-serif;
-  width: 392px;
-  top: 43px;
-  left: 22px;
-  position: relative;
   font-size: 18.4px;
   line-height: 24px;
+  width: 414px;
+  padding-left: 22px;
+  padding-top: 42px;
 }
 
 .header__links-list {
@@ -31,9 +30,7 @@
 }
 
 .header__logo {
-  position: relative;
-  left: 455px;
-  top: -24px;
+  padding-right: 153px;
 }
 
 .header__logo-image {
@@ -42,13 +39,11 @@
 
 .header__address {
   font-family: Raleway, sans-serif;
-  width: 240.52px;
-  top: -127px;
-  left: 784px;
-  position: relative;
   font-size: 18px;
   line-height: 24px;
   font-style: normal;
+  padding-top: 5px;
+  padding-right: 37px;
 }
 
 .cover {
@@ -56,7 +51,7 @@
   width: 1100px;
   min-height: 757px;
   left: 0px;
-  top: 187px;
+  top: 91px;
   background-image: url("../images/cover.jpg");
   background-size: cover;
   background-position: center;
@@ -75,10 +70,9 @@
 }
 
 .cover__title {
-  position: relative;
   width: 1000px;
-  left: 50px;
-  top: 165px;
+  padding-top: 165px;
+  padding-left: 49px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 100px;
@@ -91,34 +85,27 @@
 }
 
 .title__up {
-  position: relative;
-  left: 30px;
+  padding-left: 31px;
 }
 
 .title__center {
-  position: relative;
-  top: 13px;
-  left: 286px;
+  padding-top: 13px;
+  padding-left: 287px;
 }
 .title__center-last_letter {
   padding-left: 30px;
 }
 
 .title__down {
-  position: relative;
-  top: 18px;
-  left: 585px;
+  padding-left: 585px;
+  padding-top: 5px;
 }
 
 .title__down-first_letter {
   padding-right: 30px;
 }
 .cover__description {
-  position: relative;
   width: 637px;
-  top: 324px;
-  left: 78px;
-  z-index: 2;
   color: #ffffff;
 }
 
@@ -128,81 +115,79 @@
   line-height: 28px;
   text-transform: uppercase;
   word-spacing: 18.5px;
-  position: relative;
   width: 637px;
-  top: 324px;
-  left: 78px;
-  z-index: 2;
   color: #ffffff;
+  padding-top: 140px;
+  padding-left: 78px;
+  white-space: nowrap;
 }
 
 .bet-button {
   font-family: Raleway, sans-serif;
   width: 256px;
   height: 51px;
-  top: 282px;
-  left: 794px;
-  position: relative;
   background: transparent;
   font-size: 22px;
   text-transform: uppercase;
   color: #ffffff;
-  z-index: 2;
   border: 1px solid #ffff;
+  display: block;
+  margin-left: 794px;
+  margin-top: -40px;
 }
 
 .lots {
-  position: relative;
   width: 1052px;
-  height: 692px;
-  top: 367px;
-  left: 24px;
-  list-style-type: none;
+  padding-top: 271px;
+  padding-left: 24px;
 }
 
 .lots__heading {
   font-family: Raleway, sans-serif;
-  position: relative;
-  width: 121px;
-  left: 40px;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
   color: #000000;
+  padding-left: 40px;
 }
 
 .lots__card-list {
-  position: relative;
-  width: 1052px;
-  top: 27px;
-  list-style-type: none;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 27px;
+  list-style-type: none;
 }
 
-.card_type_film {
+.card_type {
   position: relative;
   width: 334px;
   min-height: 563px;
-  left: 0px;
-  background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
   z-index: 0;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 48px;
+  background-size: cover;
+  background-position: center;
+}
+.card-link {
+  padding-right: 25px;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .card_type-header {
   font-family: Raleway, sans-serif;
-  position: relative;
-  width: 254px;
-  left: 40px;
-  top: 51px;
+  padding: 51px 39px 0px;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
@@ -213,62 +198,26 @@
 
 .card_type-text {
   font-family: Raleway, sans-serif;
-  position: relative;
-  width: 254px;
-  left: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
   color: #ffffff;
 }
 
-.card_type_book {
-  position: relative;
-  width: 334px;
-  min-height: 563px;
-  left: 25px;
-  display: block;
-  background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
-  z-index: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 48px;
-}
-
-.card_type_picture {
-  position: relative;
-  width: 334px;
-  min-height: 563px;
-  left: 50px;
-  display: block;
-  background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
-  z-index: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 48px;
-}
-
 .lots__look-more-link {
   font-family: Raleway, sans-serif;
-  position: relative;
-  left: 40px;
-  top: 58px;
   font-size: 20px;
   line-height: 23px;
+  margin-top: 29px;
+  padding-left: 40px;
+  display: block;
 }
 
 .about {
-  position: relative;
-  width: 1052px;
-  height: 595px;
-  top: 547px;
-  left: 24px;
+  padding-top: 182px;
+  padding-left: 24px;
 }
 
 .about__column {
@@ -299,10 +248,9 @@
 }
 
 .about__column-text {
-  width: 693px;
-  top: -138px;
-  left: 359px;
-  position: relative;
+  display: block;
+  padding-left: 359px;
+  margin-top: -138px;
 }
 
 .about__title {
@@ -314,22 +262,15 @@
 
 .about__text {
   font-family: Raleway, sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 312px;
-  top: 100px;
-  position: relative;
   font-size: 20px;
   line-height: 24px;
-  letter-spacing: 0.002em;
-  justify-content: space-between;
+  letter-spacing: 0.005em;
+  padding-top: 100px;
+  padding-right: 25px;
 }
 
 .footer {
-  width: 1000px;
-  top: 692px;
-  left: 50px;
-  position: relative;
+  padding: 179px 50px;
   display: flex;
   justify-content: space-between;
 }
